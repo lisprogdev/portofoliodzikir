@@ -1,0 +1,261 @@
+   @keyframes scrollText {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      .scrolling-text {
+        animation: scrollText 20s linear infinite;
+      }
+      .typewriter h1 {
+        overflow: hidden;
+        border-right: 0.15em solid #ffb6c1;
+        white-space: nowrap;
+        margin: 0;
+        display: inline-block;
+        position: relative;
+        animation: blinkTextCursor 0.75s step-end infinite;
+      }
+      @keyframes blinkTextCursor {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #ffb6c1;
+        }
+      }
+      .fade-in {
+        animation: fadeIn 1.5s ease-in-out forwards;
+        opacity: 0;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animated-bg {
+        background: linear-gradient(45deg, #ffdfe5, #ffb6c1, #ff9aa2);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+      }
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .skill-card {
+        transition: all 0.3s ease;
+      }
+      .skill-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .photo-frame {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+      }
+      .photo-circle {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 0 0 10px #ffb6c1,
+          0 0 0 20px rgba(255, 182, 193, 0.3);
+        animation: pulse 3s infinite;
+        position: relative;
+        z-index: 10;
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.03);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      .photo-circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .decorative-circle {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 182, 193, 0.2);
+        z-index: 0;
+      }
+      .circle-1 {
+        width: 80px;
+        height: 80px;
+        top: -20px;
+        left: -20px;
+      }
+      .circle-2 {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: -10px;
+        background: rgba(255, 154, 162, 0.3);
+      }
+      .circle-3 {
+        width: 60px;
+        height: 60px;
+        top: 50%;
+        right: -30px;
+      }
+      .decorative-dots {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        z-index: 0;
+      }
+      .dots-1 {
+        top: -40px;
+        right: 0;
+        background-image: radial-gradient(#ffb6c1 1px, transparent 2px);
+        background-size: 10px 10px;
+      }
+      .dots-2 {
+        bottom: -20px;
+        left: -20px;
+        background-image: radial-gradient(#ff9aa2 2px, transparent 3px);
+        background-size: 15px 15px;
+      }
+      .decorative-line {
+        position: absolute;
+        background: linear-gradient(
+          to right,
+          transparent,
+          #ffb6c1,
+          transparent
+        );
+        height: 2px;
+        width: 150px;
+        z-index: 0;
+      }
+      .line-1 {
+        transform: rotate(45deg);
+        top: 40px;
+        left: -60px;
+      }
+      .line-2 {
+        transform: rotate(-45deg);
+        bottom: 60px;
+        right: -60px;
+      }
+      .float {
+        animation: float 6s ease-in-out infinite;
+      }
+      @keyframes float {
+        0% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-10px) rotate(5deg);
+        }
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+      }
+      .float-reverse {
+        animation: float-reverse 8s ease-in-out infinite;
+      }
+      @keyframes float-reverse {
+        0% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(10px) rotate(-5deg);
+        }
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+      }
+      /* Fixed the @apply rule by using regular CSS classes instead */
+      .timeline-tab.active {
+        background-color: #ffb6c1;
+        color: white;
+      }
+      .progress-bar {
+        position: relative;
+        height: 8px;
+        border-radius: 9999px;
+        overflow: hidden;
+      }
+      .progress-bar::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.5) 50%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        animation: shimmer 2s infinite;
+      }
+      @keyframes shimmer {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+      .stat-card {
+        transition: all 0.3s ease;
+      }
+      .stat-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .pulse-dot {
+        animation: pulseDot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      @keyframes pulseDot {
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.5;
+          transform: scale(1.1);
+        }
+      }
+      .timeline-card {
+        transition: all 0.3s ease;
+      }
+      .timeline-card:hover {
+        transform: translateY(-5px);
+      }
+      .timeline-year {
+        transition: all 0.3s ease;
+      }
+      .timeline-year:hover {
+        transform: scale(1.05);
+      }

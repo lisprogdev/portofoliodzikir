@@ -1,0 +1,3698 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Adzikra Tazkiya Qurr</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              portfolio: {
+                pink: "#FFB6C1",
+                darkPink: "#FF9AA2",
+                lightPink: "#FFDFE5",
+              },
+            },
+            fontFamily: {
+              fira: ['"Fira Code"', "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./Css/index.css" />
+  </head>
+  <body class="font-fira bg-gray-50">
+    <nav class="bg-white shadow-lg py-4 fixed w-full z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row md:justify-between md:items-center"
+        >
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <div class="text-2xl font-bold">
+                <span class="text-portfolio-pink">ADZIKRA</span>
+                <span class="text-gray-700">TAZKIYA</span>
+                <span class="text-portfolio-pink">QURR</span>
+              </div>
+            </div>
+            <div class="md:hidden">
+              <button
+                type="button"
+                class="mobile-menu-button-2 block text-gray-700 hover:text-portfolio-pink focus:outline-none"
+              >
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center space-x-2">
+            <a
+              href="#beranda"
+              class="flex items-center px-3 py-2 rounded-md text-sm font-medium text-white bg-portfolio-pink transition duration-300"
+            >
+              <i class="fas fa-home mr-2"></i> Beranda
+            </a>
+            <a
+              href="#tentang"
+              class="flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-white hover:bg-portfolio-pink transition duration-300"
+            >
+              <i class="fas fa-user mr-2"></i> Tentang
+            </a>
+            <a
+              href="#portofolio"
+              class="flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-white hover:bg-portfolio-pink transition duration-300"
+            >
+              <i class="fas fa-briefcase mr-2"></i> Portofolio
+            </a>
+            <a
+              href="#layanan"
+              class="flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-white hover:bg-portfolio-pink transition duration-300"
+            >
+              <i class="fas fa-cogs mr-2"></i> Layanan
+            </a>
+            <a
+              href="#kontak"
+              class="flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-white hover:bg-portfolio-pink transition duration-300"
+            >
+              <i class="fas fa-envelope mr-2"></i> Kontak
+            </a>
+          </div>
+        </div>
+        <div
+          class="mobile-menu-2 hidden md:hidden mt-4 border-t border-portfolio-lightPink pt-4"
+        >
+          <div class="flex flex-col space-y-2">
+            <a
+              href="#beranda"
+              class="flex items-center px-3 py-2 rounded-md text-sm font-medium text-white bg-portfolio-pink transition duration-300"
+            >
+              <i class="fas fa-home mr-2"></i> Beranda
+            </a>
+            <a
+              href="#tentang"
+              class="flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-white hover:bg-portfolio-pink transition duration-300"
+            >
+              <i class="fas fa-user mr-2"></i> Tentang
+            </a>
+            <a
+              href="#portofolio"
+              class="flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-white hover:bg-portfolio-pink transition duration-300"
+            >
+              <i class="fas fa-briefcase mr-2"></i> Portofolio
+            </a>
+            <a
+              href="#layanan"
+              class="flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-white hover:bg-portfolio-pink transition duration-300"
+            >
+              <i class="fas fa-cogs mr-2"></i> Layanan
+            </a>
+            <a
+              href="#kontak"
+              class="flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-white hover:bg-portfolio-pink transition duration-300"
+            >
+              <i class="fas fa-envelope mr-2"></i> Kontak
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="bg-portfolio-pink text-white py-2 overflow-hidden whitespace-nowrap fixed w-full z-40 mt-16"
+    >
+      <div class="scrolling-text inline-block">
+        Selamat datang di portfolio saya! Saya adalah profesional UI/UX
+        Designer, pengajar privat Matematika & Bahasa Inggris, Data Scientist
+        berpengalaman, dan Web Developer. Mari berkolaborasi untuk mewujudkan
+        ide kreatif Anda!
+      </div>
+    </div>
+
+    <section
+      id="beranda"
+      class="pt-32 pb-16 md:py-32 animated-bg overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div
+          class="absolute top-0 left-10 w-40 h-40 bg-portfolio-lightPink rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
+        ></div>
+        <div
+          class="absolute top-0 right-10 w-40 h-40 bg-portfolio-pink rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"
+        ></div>
+        <div
+          class="absolute -bottom-8 left-20 w-40 h-40 bg-portfolio-darkPink rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"
+        ></div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10"
+        >
+          <div class="text-center md:text-left">
+            <h2
+              class="text-xl md:text-2xl font-semibold text-gray-700 mb-3 fade-in"
+              style="animation-delay: 0.3s"
+            >
+              Hello, I'm
+            </h2>
+            <div class="mb-6 overflow-hidden typewriter">
+              <h1
+                class="text-3xl md:text-5xl font-bold text-gray-800 tracking-tight"
+              ></h1>
+            </div>
+            <div
+              class="h-1 w-20 bg-portfolio-pink mx-auto md:mx-0 mb-6 fade-in"
+              style="animation-delay: 0.6s"
+            ></div>
+            <p
+              class="text-lg text-gray-600 mb-8 fade-in"
+              style="animation-delay: 0.9s"
+            >
+              Seorang
+              <span class="text-portfolio-darkPink font-semibold"
+                >UI/UX Designer</span
+              >,
+              <span class="text-portfolio-darkPink font-semibold"
+                >Data Scientist</span
+              >,
+              <span class="text-portfolio-darkPink font-semibold"
+                >Web Developer</span
+              >, dan
+              <span class="text-portfolio-darkPink font-semibold"
+                >Pengajar</span
+              >
+              yang passionate dalam menciptakan solusi kreatif dan inovatif.
+            </p>
+            <div
+              class="flex flex-wrap justify-center md:justify-start gap-4 fade-in"
+              style="animation-delay: 1.2s"
+            >
+              <a
+                href="#portofolio"
+                class="px-6 py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300 shadow-lg hover:shadow-xl"
+              >
+                <i class="fas fa-eye mr-2"></i>Lihat Portfolio
+              </a>
+              <a
+                href="#kontak"
+                class="px-6 py-3 bg-white text-portfolio-pink border border-portfolio-pink rounded-full hover:bg-gray-50 transition duration-300 shadow-lg hover:shadow-xl"
+              >
+                <i class="fas fa-paper-plane mr-2"></i>Hubungi Saya
+              </a>
+            </div>
+          </div>
+          <div class="relative fade-in" style="animation-delay: 1.5s">
+            <div class="photo-frame">
+              <div class="decorative-circle circle-1 float"></div>
+              <div class="decorative-circle circle-2 float-reverse"></div>
+              <div class="decorative-circle circle-3 float"></div>
+              <div class="decorative-dots dots-1 float-reverse"></div>
+              <div class="decorative-dots dots-2 float"></div>
+              <div class="decorative-line line-1 float"></div>
+              <div class="decorative-line line-2 float-reverse"></div>
+              <div class="photo-circle">
+                <img
+                  src="./Img/Zikra.jpg"
+                  alt="Adzikra Tazkiya Qurr"
+                />
+              </div>
+            </div>
+            <svg
+              class="absolute -bottom-10 -left-10 text-portfolio-pink w-40 h-40 opacity-20"
+              fill="currentColor"
+              viewBox="0 0 100 100"
+            >
+              <path d="M50 0 L100 50 L50 100 L0 50 Z"></path>
+            </svg>
+            <svg
+              class="absolute -top-10 -right-10 text-portfolio-darkPink w-40 h-40 opacity-20"
+              fill="currentColor"
+              viewBox="0 0 100 100"
+            >
+              <circle cx="50" cy="50" r="40"></circle>
+            </svg>
+          </div>
+        </div>
+        <div
+          class="mt-16 flex justify-center space-x-6 fade-in relative z-10"
+          style="animation-delay: 2.7s"
+        >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-portfolio-pink transition duration-300"
+          >
+            <i class="fab fa-github text-2xl"></i>
+          </a>
+          <a
+            href="#"
+            class="text-gray-600 hover:text-portfolio-pink transition duration-300"
+          >
+            <i class="fab fa-linkedin text-2xl"></i>
+          </a>
+          <a
+            href="#"
+            class="text-gray-600 hover:text-portfolio-pink transition duration-300"
+          >
+            <i class="fab fa-instagram text-2xl"></i>
+          </a>
+          <a
+            href="#"
+            class="text-gray-600 hover:text-portfolio-pink transition duration-300"
+          >
+            <i class="fab fa-dribbble text-2xl"></i>
+          </a>
+          <a
+            href="#"
+            class="text-gray-600 hover:text-portfolio-pink transition duration-300"
+          >
+            <i class="fab fa-behance text-2xl"></i>
+          </a>
+        </div>
+        <div class="absolute bottom-4 left-0 right-0 flex justify-center">
+          <a
+            href="#tentang"
+            class="animate-bounce text-white bg-portfolio-pink p-3 rounded-full shadow-lg hover:bg-portfolio-darkPink transition-all duration-300"
+          >
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+            Tentang Saya
+          </h2>
+          <div class="h-1 w-20 bg-portfolio-pink mx-auto mb-4"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Pengenalan singkat tentang perjalanan karir dan profesional saya.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+          <div class="fade-in" data-aos="fade-right">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+              Kenalan Dengan Saya
+            </h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              Halo! Saya Adzikra Tazkiya Qurr, seorang profesional dengan
+              passion dalam dunia teknologi, desain, dan pendidikan. Dengan
+              pengalaman lebih dari 5 tahun di industri teknologi, saya telah
+              mengembangkan keahlian yang komprehensif dalam UI/UX design, data
+              science, dan web development.
+            </p>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              Selain karir teknologi saya, saya juga berdedikasi untuk berbagi
+              pengetahuan melalui pengajaran. Saya mengajar matematika dan
+              bahasa Inggris dengan pendekatan yang inovatif dan berorientasi
+              pada hasil.
+            </p>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Saya percaya bahwa kombinasi antara kreativitas dan analitis
+              adalah kunci untuk menciptakan solusi yang tidak hanya efektif
+              tetapi juga menarik dan user-friendly. Saya selalu mencari peluang
+              untuk belajar hal baru dan mengembangkan keterampilan saya.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div>
+                <p class="text-gray-600">
+                  <span class="font-semibold text-gray-800">Nama:</span> Adzikra
+                  Tazkiya Qurr
+                </p>
+                <p class="text-gray-600">
+                  <span class="font-semibold text-gray-800">Email:</span>
+                  adzikra@example.com
+                </p>
+                <p class="text-gray-600">
+                  <span class="font-semibold text-gray-800">Lokasi:</span>
+                  Jakarta, Indonesia
+                </p>
+              </div>
+              <div>
+                <p class="text-gray-600">
+                  <span class="font-semibold text-gray-800"
+                    >Tersedia untuk:</span
+                  >
+                  Freelance, Project
+                </p>
+                <p class="text-gray-600">
+                  <span class="font-semibold text-gray-800">Bahasa:</span>
+                  Bahasa Indonesia, English
+                </p>
+                <p class="text-gray-600">
+                  <span class="font-semibold text-gray-800">Pengalaman:</span>
+                  5+ Tahun
+                </p>
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="inline-block px-6 py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300 shadow-lg hover:shadow-xl"
+            >
+              <i class="fas fa-download mr-2"></i> Download CV
+            </a>
+          </div>
+
+          <div class="fade-in" data-aos="fade-left">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-6">
+              Keahlian Profesional
+            </h3>
+
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-700 font-medium">UI/UX Design</span>
+                <span class="text-gray-600">95%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-3 progress-bar">
+                <div
+                  class="bg-portfolio-pink h-3 rounded-full"
+                  style="width: 95%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-700 font-medium">Data Science</span>
+                <span class="text-gray-600">85%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-3 progress-bar">
+                <div
+                  class="bg-portfolio-pink h-3 rounded-full"
+                  style="width: 85%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-700 font-medium">Web Development</span>
+                <span class="text-gray-600">90%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-3 progress-bar">
+                <div
+                  class="bg-portfolio-pink h-3 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="mb-10">
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-700 font-medium">Pengajaran</span>
+                <span class="text-gray-600">92%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-3 progress-bar">
+                <div
+                  class="bg-portfolio-pink h-3 rounded-full"
+                  style="width: 92%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mt-10">
+              <div
+                class="stat-card bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-portfolio-pink"
+              >
+                <div
+                  class="text-4xl font-bold text-portfolio-darkPink mb-2 counter"
+                >
+                  45
+                </div>
+                <p class="text-gray-600">Proyek Selesai</p>
+              </div>
+              <div
+                class="stat-card bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-portfolio-pink"
+              >
+                <div
+                  class="text-4xl font-bold text-portfolio-darkPink mb-2 counter"
+                >
+                  36
+                </div>
+                <p class="text-gray-600">Klien Puas</p>
+              </div>
+              <div
+                class="stat-card bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-portfolio-pink"
+              >
+                <div
+                  class="text-4xl font-bold text-portfolio-darkPink mb-2 counter"
+                >
+                  120
+                </div>
+                <p class="text-gray-600">Siswa Diajar</p>
+              </div>
+              <div
+                class="stat-card bg-white p-6 rounded-lg shadow-md text-center border-t-4 border-portfolio-pink"
+              >
+                <div
+                  class="text-4xl font-bold text-portfolio-darkPink mb-2 counter"
+                >
+                  8
+                </div>
+                <p class="text-gray-600">Penghargaan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 py-16 rounded-xl shadow-sm">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl font-bold text-gray-800 mb-3">
+                Perjalanan Karir & Pendidikan
+              </h2>
+              <div class="h-1 w-20 bg-portfolio-pink mx-auto mb-4"></div>
+              <p class="text-gray-600 max-w-2xl mx-auto">
+                Pengalaman akademis dan profesional yang telah membentuk
+                keahlian dan pengetahuan saya hingga saat ini.
+              </p>
+            </div>
+
+            <div class="flex justify-center mb-10">
+              <div class="inline-flex bg-white p-1 rounded-full shadow-md">
+                <button
+                  id="tab-education"
+                  class="timeline-tab px-6 py-3 rounded-full bg-portfolio-pink text-white transition-all duration-300 focus:outline-none"
+                >
+                  <i class="fas fa-graduation-cap mr-2"></i>Pendidikan
+                </button>
+                <button
+                  id="tab-experience"
+                  class="timeline-tab px-6 py-3 rounded-full text-gray-700 hover:text-portfolio-pink transition-all duration-300 focus:outline-none"
+                >
+                  <i class="fas fa-briefcase mr-2"></i>Pengalaman
+                </button>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div id="timeline-education" class="timeline-content">
+                <div
+                  class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1.5 bg-gradient-to-b from-portfolio-lightPink via-portfolio-pink to-portfolio-darkPink rounded-full opacity-60"
+                ></div>
+
+                <div class="space-y-12">
+                  <div class="relative">
+                    <div class="md:grid md:grid-cols-5 md:gap-8 items-center">
+                      <div
+                        class="md:col-span-1 mb-4 md:mb-0 flex md:justify-end"
+                      >
+                        <div
+                          class="timeline-year md:mr-8 inline-flex items-center justify-center px-4 py-2 bg-white text-portfolio-darkPink font-bold rounded-lg shadow-md border-2 border-portfolio-lightPink transform transition-transform hover:scale-105 group"
+                        >
+                          <span class="mr-2">2018-2020</span>
+                          <i
+                            class="fas fa-calendar-alt opacity-50 group-hover:opacity-100 transition-opacity"
+                          ></i>
+                        </div>
+                      </div>
+
+                      <div
+                        class="hidden md:block absolute left-1/2 transform -translate-x-1/2 mt-4 w-5 h-5 bg-white rounded-full border-4 border-portfolio-pink shadow-md z-10 pulse-dot"
+                      ></div>
+
+                      <div
+                        class="timeline-card md:col-span-4 bg-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-portfolio-pink"
+                      >
+                        <div class="flex flex-col md:flex-row md:items-start">
+                          <div class="mb-4 md:mb-0 md:mr-6 flex-shrink-0">
+                            <div
+                              class="w-14 h-14 bg-portfolio-lightPink rounded-full flex items-center justify-center text-portfolio-darkPink"
+                            >
+                              <i class="fas fa-university text-2xl"></i>
+                            </div>
+                          </div>
+
+                          <div class="flex-grow">
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">
+                              Master of Computer Science
+                            </h4>
+                            <p
+                              class="text-portfolio-darkPink font-medium mb-3 flex items-center"
+                            >
+                              <i
+                                class="fas fa-map-marker-alt mr-2 opacity-70"
+                              ></i>
+                              University of Indonesia
+                            </p>
+                            <p class="text-gray-600 mb-4">
+                              Spesialisasi dalam Data Science dan Machine
+                              Learning, dengan GPA 3.92/4.0. Thesis penelitian:
+                              "Implementasi Deep Learning untuk Prediksi Pola
+                              Konsumsi Energi".
+                            </p>
+
+                            <div class="flex flex-wrap gap-2">
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Machine Learning</span
+                              >
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Deep Learning</span
+                              >
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Data Analytics</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative">
+                    <div class="md:grid md:grid-cols-5 md:gap-8 items-center">
+                      <div
+                        class="md:col-span-4 md:col-start-1 bg-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-r-4 border-portfolio-pink order-2 md:order-1 timeline-card"
+                      >
+                        <div class="flex flex-col md:flex-row md:items-start">
+                          <div class="mb-4 md:mb-0 md:mr-6 flex-shrink-0">
+                            <div
+                              class="w-14 h-14 bg-portfolio-lightPink rounded-full flex items-center justify-center text-portfolio-darkPink"
+                            >
+                              <i class="fas fa-graduation-cap text-2xl"></i>
+                            </div>
+                          </div>
+
+                          <div class="flex-grow">
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">
+                              Bachelor of Computer Science
+                            </h4>
+                            <p
+                              class="text-portfolio-darkPink font-medium mb-3 flex items-center"
+                            >
+                              <i
+                                class="fas fa-map-marker-alt mr-2 opacity-70"
+                              ></i>
+                              Institut Teknologi Bandung
+                            </p>
+                            <p class="text-gray-600 mb-4">
+                              Fokus pada Software Engineering dan Human-Computer
+                              Interaction. Lulus dengan predikat Cum Laude.
+                              Aktif dalam kompetisi nasional dan internasional.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2">
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Software Engineering</span
+                              >
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >HCI</span
+                              >
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Algorithms</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="hidden md:block absolute left-1/2 transform -translate-x-1/2 mt-4 w-5 h-5 bg-white rounded-full border-4 border-portfolio-pink shadow-md z-10 pulse-dot"
+                      ></div>
+
+                      <div
+                        class="md:col-span-1 mb-4 md:mb-0 flex md:justify-start order-1 md:order-2"
+                      >
+                        <div
+                          class="timeline-year md:ml-8 inline-flex items-center justify-center px-4 py-2 bg-white text-portfolio-darkPink font-bold rounded-lg shadow-md border-2 border-portfolio-lightPink transform transition-transform hover:scale-105 group"
+                        >
+                          <i
+                            class="fas fa-calendar-alt mr-2 opacity-50 group-hover:opacity-100 transition-opacity"
+                          ></i>
+                          <span>2014-2018</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative">
+                    <div class="md:grid md:grid-cols-5 md:gap-8 items-center">
+                      <div
+                        class="md:col-span-1 mb-4 md:mb-0 flex md:justify-end"
+                      >
+                        <div
+                          class="timeline-year md:mr-8 inline-flex items-center justify-center px-4 py-2 bg-white text-portfolio-darkPink font-bold rounded-lg shadow-md border-2 border-portfolio-lightPink transform transition-transform hover:scale-105 group"
+                        >
+                          <span class="mr-2">2011-2014</span>
+                          <i
+                            class="fas fa-calendar-alt opacity-50 group-hover:opacity-100 transition-opacity"
+                          ></i>
+                        </div>
+                      </div>
+
+                      <div
+                        class="hidden md:block absolute left-1/2 transform -translate-x-1/2 mt-4 w-5 h-5 bg-white rounded-full border-4 border-portfolio-pink shadow-md z-10 pulse-dot"
+                      ></div>
+
+                      <div
+                        class="timeline-card md:col-span-4 bg-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-portfolio-pink"
+                      >
+                        <div class="flex flex-col md:flex-row md:items-start">
+                          <div class="mb-4 md:mb-0 md:mr-6 flex-shrink-0">
+                            <div
+                              class="w-14 h-14 bg-portfolio-lightPink rounded-full flex items-center justify-center text-portfolio-darkPink"
+                            >
+                              <i class="fas fa-school text-2xl"></i>
+                            </div>
+                          </div>
+
+                          <div class="flex-grow">
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">
+                              High School - Science Program
+                            </h4>
+                            <p
+                              class="text-portfolio-darkPink font-medium mb-3 flex items-center"
+                            >
+                              <i
+                                class="fas fa-map-marker-alt mr-2 opacity-70"
+                              ></i>
+                              SMA Negeri 3 Bandung
+                            </p>
+                            <p class="text-gray-600 mb-4">
+                              Juara olimpiade Matematika tingkat provinsi. Ketua
+                              klub programming dan anggota aktif English
+                              Debating Club.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2">
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Mathematics</span
+                              >
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Programming</span
+                              >
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Debating</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="timeline-experience" class="timeline-content hidden">
+                <div
+                  class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1.5 bg-gradient-to-b from-portfolio-lightPink via-portfolio-pink to-portfolio-darkPink rounded-full opacity-60"
+                ></div>
+
+                <div class="space-y-12">
+                  <div class="relative">
+                    <div class="md:grid md:grid-cols-5 md:gap-8 items-center">
+                      <div
+                        class="md:col-span-1 mb-4 md:mb-0 flex md:justify-end"
+                      >
+                        <div
+                          class="timeline-year md:mr-8 inline-flex items-center justify-center px-4 py-2 bg-white text-portfolio-darkPink font-bold rounded-lg shadow-md border-2 border-portfolio-lightPink transform transition-transform hover:scale-105 group"
+                        >
+                          <span class="mr-2">2021-Sekarang</span>
+                          <i
+                            class="fas fa-calendar-alt opacity-50 group-hover:opacity-100 transition-opacity"
+                          ></i>
+                        </div>
+                      </div>
+
+                      <div
+                        class="hidden md:block absolute left-1/2 transform -translate-x-1/2 mt-4 w-5 h-5 bg-white rounded-full border-4 border-portfolio-pink shadow-md z-10 pulse-dot"
+                      ></div>
+
+                      <div
+                        class="timeline-card md:col-span-4 bg-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-portfolio-pink"
+                      >
+                        <div class="flex flex-col md:flex-row md:items-start">
+                          <div class="mb-4 md:mb-0 md:mr-6 flex-shrink-0">
+                            <div
+                              class="w-14 h-14 bg-portfolio-lightPink rounded-full flex items-center justify-center text-portfolio-darkPink"
+                            >
+                              <i class="fas fa-laptop-code text-2xl"></i>
+                            </div>
+                          </div>
+
+                          <div class="flex-grow">
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">
+                              Senior UI/UX Designer
+                            </h4>
+                            <p
+                              class="text-portfolio-darkPink font-medium mb-3 flex items-center"
+                            >
+                              <i class="fas fa-building mr-2 opacity-70"></i>
+                              Tech Innovators Inc.
+                            </p>
+                            <p class="text-gray-600 mb-4">
+                              Memimpin tim desain untuk mengembangkan produk
+                              fintech yang digunakan oleh lebih dari 500.000
+                              pengguna. Menerapkan metodologi design thinking
+                              dan user-centered design.
+                            </p>
+
+                            <div class="mb-4">
+                              <h5
+                                class="text-sm font-semibold text-gray-700 mb-2"
+                              >
+                                Pencapaian Utama:
+                              </h5>
+                              <ul
+                                class="list-disc pl-5 space-y-1 text-gray-600 text-sm"
+                              >
+                                <li>
+                                  Meningkatkan engagement pengguna sebesar 37%
+                                </li>
+                                <li>
+                                  Memimpin redesign UI yang meningkatkan
+                                  konversi 28%
+                                </li>
+                                <li>
+                                  Mengelola tim 5 designer dengan metodologi
+                                  agile
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2">
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >UI/UX Design</span
+                              >
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Fintech</span
+                              >
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Leadership</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative">
+                    <div class="md:grid md:grid-cols-5 md:gap-8 items-center">
+                      <div
+                        class="md:col-span-4 md:col-start-1 bg-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-r-4 border-portfolio-pink order-2 md:order-1 timeline-card"
+                      >
+                        <div class="flex flex-col md:flex-row md:items-start">
+                          <div class="mb-4 md:mb-0 md:mr-6 flex-shrink-0">
+                            <div
+                              class="w-14 h-14 bg-portfolio-lightPink rounded-full flex items-center justify-center text-portfolio-darkPink"
+                            >
+                              <i class="fas fa-chart-pie text-2xl"></i>
+                            </div>
+                          </div>
+
+                          <div class="flex-grow">
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">
+                              Data Scientist
+                            </h4>
+                            <p
+                              class="text-portfolio-darkPink font-medium mb-3 flex items-center"
+                            >
+                              <i class="fas fa-building mr-2 opacity-70"></i>
+                              Analytics Solutions Ltd.
+                            </p>
+                            <p class="text-gray-600 mb-4">
+                              Mengembangkan model machine learning untuk
+                              analisis sentimen dan prediksi perilaku konsumen.
+                              Berhasil meningkatkan akurasi prediksi sebesar
+                              23%.
+                            </p>
+
+                            <div class="mb-4">
+                              <h5
+                                class="text-sm font-semibold text-gray-700 mb-2"
+                              >
+                                Pencapaian Utama:
+                              </h5>
+                              <ul
+                                class="list-disc pl-5 space-y-1 text-gray-600 text-sm"
+                              >
+                                <li>
+                                  Implementasi model NLP untuk analisis sentimen
+                                  media sosial
+                                </li>
+                                <li>
+                                  Mengembangkan dashboard prediktif untuk klien
+                                  enterprise
+                                </li>
+                                <li>
+                                  Meningkatkan akurasi prediksi model sebesar
+                                  23%
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2">
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Machine Learning</span
+                              >
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >NLP</span
+                              >
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Data Analytics</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="hidden md:block absolute left-1/2 transform -translate-x-1/2 mt-4 w-5 h-5 bg-white rounded-full border-4 border-portfolio-pink shadow-md z-10 pulse-dot"
+                      ></div>
+
+                      <div
+                        class="md:col-span-1 mb-4 md:mb-0 flex md:justify-start order-1 md:order-2"
+                      >
+                        <div
+                          class="timeline-year md:ml-8 inline-flex items-center justify-center px-4 py-2 bg-white text-portfolio-darkPink font-bold rounded-lg shadow-md border-2 border-portfolio-lightPink transform transition-transform hover:scale-105 group"
+                        >
+                          <i
+                            class="fas fa-calendar-alt mr-2 opacity-50 group-hover:opacity-100 transition-opacity"
+                          ></i>
+                          <span>2020-2021</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative">
+                    <div class="md:grid md:grid-cols-5 md:gap-8 items-center">
+                      <div
+                        class="md:col-span-1 mb-4 md:mb-0 flex md:justify-end"
+                      >
+                        <div
+                          class="timeline-year md:mr-8 inline-flex items-center justify-center px-4 py-2 bg-white text-portfolio-darkPink font-bold rounded-lg shadow-md border-2 border-portfolio-lightPink transform transition-transform hover:scale-105 group"
+                        >
+                          <span class="mr-2">2018-2020</span>
+                          <i
+                            class="fas fa-calendar-alt opacity-50 group-hover:opacity-100 transition-opacity"
+                          ></i>
+                        </div>
+                      </div>
+
+                      <div
+                        class="hidden md:block absolute left-1/2 transform -translate-x-1/2 mt-4 w-5 h-5 bg-white rounded-full border-4 border-portfolio-pink shadow-md z-10 pulse-dot"
+                      ></div>
+
+                      <div
+                        class="timeline-card md:col-span-4 bg-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-portfolio-pink"
+                      >
+                        <div class="flex flex-col md:flex-row md:items-start">
+                          <div class="mb-4 md:mb-0 md:mr-6 flex-shrink-0">
+                            <div
+                              class="w-14 h-14 bg-portfolio-lightPink rounded-full flex items-center justify-center text-portfolio-darkPink"
+                            >
+                              <i class="fas fa-code text-2xl"></i>
+                            </div>
+                          </div>
+
+                          <div class="flex-grow">
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">
+                              Web Developer
+                            </h4>
+                            <p
+                              class="text-portfolio-darkPink font-medium mb-3 flex items-center"
+                            >
+                              <i class="fas fa-building mr-2 opacity-70"></i>
+                              Digital Creations
+                            </p>
+                            <p class="text-gray-600 mb-4">
+                              Mengembangkan website e-commerce dan aplikasi web
+                              untuk berbagai klien. Menerapkan praktik
+                              pengembangan terbaik dan desain responsif.
+                            </p>
+
+                            <div class="mb-4">
+                              <h5
+                                class="text-sm font-semibold text-gray-700 mb-2"
+                              >
+                                Pencapaian Utama:
+                              </h5>
+                              <ul
+                                class="list-disc pl-5 space-y-1 text-gray-600 text-sm"
+                              >
+                                <li>
+                                  Mengembangkan 12+ website e-commerce dan
+                                  aplikasi web
+                                </li>
+                                <li>
+                                  Meningkatkan performa website hingga 65% lebih
+                                  cepat
+                                </li>
+                                <li>
+                                  Implementasi sistem pembayaran dan keamanan
+                                  tingkat tinggi
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2">
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Web Development</span
+                              >
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >E-commerce</span
+                              >
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Responsive Design</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative">
+                    <div class="md:grid md:grid-cols-5 md:gap-8 items-center">
+                      <div
+                        class="md:col-span-4 md:col-start-1 bg-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-r-4 border-portfolio-pink order-2 md:order-1 timeline-card"
+                      >
+                        <div class="flex flex-col md:flex-row md:items-start">
+                          <div class="mb-4 md:mb-0 md:mr-6 flex-shrink-0">
+                            <div
+                              class="w-14 h-14 bg-portfolio-lightPink rounded-full flex items-center justify-center text-portfolio-darkPink"
+                            >
+                              <i class="fas fa-chalkboard-teacher text-2xl"></i>
+                            </div>
+                          </div>
+
+                          <div class="flex-grow">
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">
+                              Pengajar Privat
+                            </h4>
+                            <p
+                              class="text-portfolio-darkPink font-medium mb-3 flex items-center"
+                            >
+                              <i class="fas fa-user-tie mr-2 opacity-70"></i>
+                              Freelance
+                            </p>
+                            <p class="text-gray-600 mb-4">
+                              Mengajar matematika dan bahasa Inggris untuk siswa
+                              SMP dan SMA. Mengembangkan metode pengajaran
+                              inovatif yang meningkatkan prestasi akademik
+                              siswa.
+                            </p>
+
+                            <div class="mb-4">
+                              <h5
+                                class="text-sm font-semibold text-gray-700 mb-2"
+                              >
+                                Pencapaian Utama:
+                              </h5>
+                              <ul
+                                class="list-disc pl-5 space-y-1 text-gray-600 text-sm"
+                              >
+                                <li>
+                                  Membantu 50+ siswa meningkatkan nilai akademis
+                                </li>
+                                <li>Mengembangkan modul belajar interaktif</li>
+                                <li>
+                                  Mendampingi siswa meraih beasiswa ke
+                                  universitas terkemuka
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2">
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Mathematics</span
+                              >
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >English</span
+                              >
+                              <span
+                                class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                                >Teaching</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="hidden md:block absolute left-1/2 transform -translate-x-1/2 mt-4 w-5 h-5 bg-white rounded-full border-4 border-portfolio-pink shadow-md z-10 pulse-dot"
+                      ></div>
+
+                      <div
+                        class="md:col-span-1 mb-4 md:mb-0 flex md:justify-start order-1 md:order-2"
+                      >
+                        <div
+                          class="timeline-year md:ml-8 inline-flex items-center justify-center px-4 py-2 bg-white text-portfolio-darkPink font-bold rounded-lg shadow-md border-2 border-portfolio-lightPink transform transition-transform hover:scale-105 group"
+                        >
+                          <i
+                            class="fas fa-calendar-alt mr-2 opacity-50 group-hover:opacity-100 transition-opacity"
+                          ></i>
+                          <span>2019-Sekarang</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section with Horizontal Scrolling -->
+    <section id="portofolio" class="py-20 bg-gray-50 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+            Portfolio
+          </h2>
+          <div class="h-1 w-20 bg-portfolio-pink mx-auto mb-4"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Koleksi proyek terbaik yang telah saya kerjakan di berbagai bidang
+            keahlian.
+          </p>
+        </div>
+
+        <!-- Portfolio Filter Buttons -->
+        <div class="flex flex-wrap justify-center gap-3 mb-12">
+          <button
+            class="portfolio-filter-btn active px-6 py-2 rounded-full bg-portfolio-pink text-white hover:bg-portfolio-darkPink transition duration-300 shadow-md"
+            data-filter="all"
+          >
+            Semua
+          </button>
+          <button
+            class="portfolio-filter-btn px-6 py-2 rounded-full bg-white text-gray-700 hover:bg-portfolio-pink hover:text-white transition duration-300 shadow-md"
+            data-filter="ui-ux"
+          >
+            UI/UX Design
+          </button>
+          <button
+            class="portfolio-filter-btn px-6 py-2 rounded-full bg-white text-gray-700 hover:bg-portfolio-pink hover:text-white transition duration-300 shadow-md"
+            data-filter="web"
+          >
+            Web Development
+          </button>
+          <button
+            class="portfolio-filter-btn px-6 py-2 rounded-full bg-white text-gray-700 hover:bg-portfolio-pink hover:text-white transition duration-300 shadow-md"
+            data-filter="data"
+          >
+            Data Science
+          </button>
+          <button
+            class="portfolio-filter-btn px-6 py-2 rounded-full bg-white text-gray-700 hover:bg-portfolio-pink hover:text-white transition duration-300 shadow-md"
+            data-filter="teaching"
+          >
+            Teaching
+          </button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Portfolio Item 1 with Carousel -->
+          <div class="portfolio-item ui-ux" data-category="ui-ux">
+            <div
+              class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full transform hover:-translate-y-2"
+            >
+              <!-- Carousel -->
+              <div class="carousel-container relative">
+                <div class="carousel-slides overflow-hidden h-64">
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=UI/UX+Project+1"
+                      alt="UI/UX Design Project"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out translate-x-full"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=UI/UX+Project+2"
+                      alt="UI/UX Design Project"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out translate-x-full"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=UI/UX+Project+3"
+                      alt="UI/UX Design Project"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                </div>
+                <!-- Carousel Controls -->
+                <div
+                  class="absolute top-0 inset-x-0 h-full flex items-center justify-between px-4 opacity-0 hover:opacity-100 transition-opacity"
+                >
+                  <button
+                    class="carousel-prev bg-white bg-opacity-50 hover:bg-opacity-80 p-1 rounded-full transition-all duration-300"
+                  >
+                    <i class="fas fa-chevron-left text-gray-800"></i>
+                  </button>
+                  <button
+                    class="carousel-next bg-white bg-opacity-50 hover:bg-opacity-80 p-1 rounded-full transition-all duration-300"
+                  >
+                    <i class="fas fa-chevron-right text-gray-800"></i>
+                  </button>
+                </div>
+                <!-- Carousel Indicators -->
+                <div
+                  class="absolute bottom-3 inset-x-0 flex justify-center space-x-2"
+                >
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100 active"
+                  ></button>
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100"
+                  ></button>
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100"
+                  ></button>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-xl font-bold text-gray-800">
+                    Finance App Redesign
+                  </h3>
+                  <span
+                    class="text-xs font-medium bg-portfolio-lightPink text-portfolio-darkPink px-2 py-1 rounded-full"
+                    >UI/UX</span
+                  >
+                </div>
+                <p class="text-gray-600 text-sm mb-4">
+                  Redesign aplikasi keuangan dengan fokus pada peningkatan user
+                  experience dan engagement.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >Figma</span
+                  >
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >User Research</span
+                  >
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >Prototyping</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 2 with Carousel -->
+          <div class="portfolio-item web" data-category="web">
+            <div
+              class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full transform hover:-translate-y-2"
+            >
+              <!-- Carousel -->
+              <div class="carousel-container relative">
+                <div class="carousel-slides overflow-hidden h-64">
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=Web+Project+1"
+                      alt="Web Development Project"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out translate-x-full"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=Web+Project+2"
+                      alt="Web Development Project"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out translate-x-full"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=Web+Project+3"
+                      alt="Web Development Project"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                </div>
+                <!-- Carousel Controls -->
+                <div
+                  class="absolute top-0 inset-x-0 h-full flex items-center justify-between px-4 opacity-0 hover:opacity-100 transition-opacity"
+                >
+                  <button
+                    class="carousel-prev bg-white bg-opacity-50 hover:bg-opacity-80 p-1 rounded-full transition-all duration-300"
+                  >
+                    <i class="fas fa-chevron-left text-gray-800"></i>
+                  </button>
+                  <button
+                    class="carousel-next bg-white bg-opacity-50 hover:bg-opacity-80 p-1 rounded-full transition-all duration-300"
+                  >
+                    <i class="fas fa-chevron-right text-gray-800"></i>
+                  </button>
+                </div>
+                <!-- Carousel Indicators -->
+                <div
+                  class="absolute bottom-3 inset-x-0 flex justify-center space-x-2"
+                >
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100 active"
+                  ></button>
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100"
+                  ></button>
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100"
+                  ></button>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-xl font-bold text-gray-800">
+                    E-Commerce Platform
+                  </h3>
+                  <span
+                    class="text-xs font-medium bg-portfolio-lightPink text-portfolio-darkPink px-2 py-1 rounded-full"
+                    >Web</span
+                  >
+                </div>
+                <p class="text-gray-600 text-sm mb-4">
+                  Platform e-commerce dengan fitur checkout yang aman dan
+                  tampilan responsif untuk semua perangkat.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >React.js</span
+                  >
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >Node.js</span
+                  >
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >Tailwind CSS</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 3 with Carousel -->
+          <div class="portfolio-item data" data-category="data">
+            <div
+              class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full transform hover:-translate-y-2"
+            >
+              <!-- Carousel -->
+              <div class="carousel-container relative">
+                <div class="carousel-slides overflow-hidden h-64">
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=Data+Project+1"
+                      alt="Data Science Project"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out translate-x-full"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=Data+Project+2"
+                      alt="Data Science Project"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out translate-x-full"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=Data+Project+3"
+                      alt="Data Science Project"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                </div>
+                <!-- Carousel Controls -->
+                <div
+                  class="absolute top-0 inset-x-0 h-full flex items-center justify-between px-4 opacity-0 hover:opacity-100 transition-opacity"
+                >
+                  <button
+                    class="carousel-prev bg-white bg-opacity-50 hover:bg-opacity-80 p-1 rounded-full transition-all duration-300"
+                  >
+                    <i class="fas fa-chevron-left text-gray-800"></i>
+                  </button>
+                  <button
+                    class="carousel-next bg-white bg-opacity-50 hover:bg-opacity-80 p-1 rounded-full transition-all duration-300"
+                  >
+                    <i class="fas fa-chevron-right text-gray-800"></i>
+                  </button>
+                </div>
+                <!-- Carousel Indicators -->
+                <div
+                  class="absolute bottom-3 inset-x-0 flex justify-center space-x-2"
+                >
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100 active"
+                  ></button>
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100"
+                  ></button>
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100"
+                  ></button>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-xl font-bold text-gray-800">
+                    Customer Behavior Analysis
+                  </h3>
+                  <span
+                    class="text-xs font-medium bg-portfolio-lightPink text-portfolio-darkPink px-2 py-1 rounded-full"
+                    >Data</span
+                  >
+                </div>
+                <p class="text-gray-600 text-sm mb-4">
+                  Analisis perilaku pelanggan menggunakan machine learning untuk
+                  memprediksi tren pembelian.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >Python</span
+                  >
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >TensorFlow</span
+                  >
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >Data Visualization</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 4 (English Teaching Materials) with Carousel -->
+          <div class="portfolio-item teaching" data-category="teaching">
+            <div
+              class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full transform hover:-translate-y-2"
+            >
+              <!-- Carousel -->
+              <div class="carousel-container relative">
+                <div class="carousel-slides overflow-hidden h-64">
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=English+Module+1"
+                      alt="English Teaching Materials"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out translate-x-full"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=English+Module+2"
+                      alt="English Teaching Materials"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out translate-x-full"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=English+Module+3"
+                      alt="English Teaching Materials"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                </div>
+                <!-- Carousel Controls -->
+                <div
+                  class="absolute top-0 inset-x-0 h-full flex items-center justify-between px-4 opacity-0 hover:opacity-100 transition-opacity"
+                >
+                  <button
+                    class="carousel-prev bg-white bg-opacity-50 hover:bg-opacity-80 p-1 rounded-full transition-all duration-300"
+                  >
+                    <i class="fas fa-chevron-left text-gray-800"></i>
+                  </button>
+                  <button
+                    class="carousel-next bg-white bg-opacity-50 hover:bg-opacity-80 p-1 rounded-full transition-all duration-300"
+                  >
+                    <i class="fas fa-chevron-right text-gray-800"></i>
+                  </button>
+                </div>
+                <!-- Carousel Indicators -->
+                <div
+                  class="absolute bottom-3 inset-x-0 flex justify-center space-x-2"
+                >
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100 active"
+                  ></button>
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100"
+                  ></button>
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100"
+                  ></button>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-xl font-bold text-gray-800">
+                    English Learning Materials
+                  </h3>
+                  <span
+                    class="text-xs font-medium bg-portfolio-lightPink text-portfolio-darkPink px-2 py-1 rounded-full"
+                    >Teaching</span
+                  >
+                </div>
+                <p class="text-gray-600 text-sm mb-4">
+                  Modul pembelajaran bahasa Inggris interaktif dengan fokus pada
+                  conversation dan grammar untuk berbagai tingkat kemampuan.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >Speaking</span
+                  >
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >Grammar</span
+                  >
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >Interactive</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 5 (Math Teaching Materials) with Carousel -->
+          <div class="portfolio-item teaching" data-category="teaching">
+            <div
+              class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full transform hover:-translate-y-2"
+            >
+              <!-- Carousel -->
+              <div class="carousel-container relative">
+                <div class="carousel-slides overflow-hidden h-64">
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=Math+Module+1"
+                      alt="Math Teaching Materials"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out translate-x-full"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=Math+Module+2"
+                      alt="Math Teaching Materials"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out translate-x-full"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=Math+Module+3"
+                      alt="Math Teaching Materials"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                </div>
+                <!-- Carousel Controls -->
+                <div
+                  class="absolute top-0 inset-x-0 h-full flex items-center justify-between px-4 opacity-0 hover:opacity-100 transition-opacity"
+                >
+                  <button
+                    class="carousel-prev bg-white bg-opacity-50 hover:bg-opacity-80 p-1 rounded-full transition-all duration-300"
+                  >
+                    <i class="fas fa-chevron-left text-gray-800"></i>
+                  </button>
+                  <button
+                    class="carousel-next bg-white bg-opacity-50 hover:bg-opacity-80 p-1 rounded-full transition-all duration-300"
+                  >
+                    <i class="fas fa-chevron-right text-gray-800"></i>
+                  </button>
+                </div>
+                <!-- Carousel Indicators -->
+                <div
+                  class="absolute bottom-3 inset-x-0 flex justify-center space-x-2"
+                >
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100 active"
+                  ></button>
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100"
+                  ></button>
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100"
+                  ></button>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-xl font-bold text-gray-800">
+                    Mathematics Learning Module
+                  </h3>
+                  <span
+                    class="text-xs font-medium bg-portfolio-lightPink text-portfolio-darkPink px-2 py-1 rounded-full"
+                    >Teaching</span
+                  >
+                </div>
+                <p class="text-gray-600 text-sm mb-4">
+                  Modul pembelajaran matematika dengan pendekatan pemecahan
+                  masalah dan latihan soal untuk tingkat SD, SMP, dan SMA.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >Algebra</span
+                  >
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >Geometry</span
+                  >
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >Problem Solving</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 6 (Coding for Kids Materials) with Carousel -->
+          <div class="portfolio-item teaching" data-category="teaching">
+            <div
+              class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full transform hover:-translate-y-2"
+            >
+              <!-- Carousel -->
+              <div class="carousel-container relative">
+                <div class="carousel-slides overflow-hidden h-64">
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=Coding+Module+1"
+                      alt="Coding for Kids Materials"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out translate-x-full"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=Coding+Module+2"
+                      alt="Coding for Kids Materials"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                  <div
+                    class="carousel-slide absolute inset-0 transition-transform duration-500 ease-in-out translate-x-full"
+                  >
+                    <img
+                      src="https://placehold.co/600x400/FFB6C1/fff?text=Coding+Module+3"
+                      alt="Coding for Kids Materials"
+                      class="w-full h-64 object-cover"
+                    />
+                  </div>
+                </div>
+                <!-- Carousel Controls -->
+                <div
+                  class="absolute top-0 inset-x-0 h-full flex items-center justify-between px-4 opacity-0 hover:opacity-100 transition-opacity"
+                >
+                  <button
+                    class="carousel-prev bg-white bg-opacity-50 hover:bg-opacity-80 p-1 rounded-full transition-all duration-300"
+                  >
+                    <i class="fas fa-chevron-left text-gray-800"></i>
+                  </button>
+                  <button
+                    class="carousel-next bg-white bg-opacity-50 hover:bg-opacity-80 p-1 rounded-full transition-all duration-300"
+                  >
+                    <i class="fas fa-chevron-right text-gray-800"></i>
+                  </button>
+                </div>
+                <!-- Carousel Indicators -->
+                <div
+                  class="absolute bottom-3 inset-x-0 flex justify-center space-x-2"
+                >
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100 active"
+                  ></button>
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100"
+                  ></button>
+                  <button
+                    class="carousel-indicator w-2 h-2 rounded-full bg-white bg-opacity-60 hover:bg-opacity-100"
+                  ></button>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-2">
+                  <h3 class="text-xl font-bold text-gray-800">
+                    Coding for Kids Module
+                  </h3>
+                  <span
+                    class="text-xs font-medium bg-portfolio-lightPink text-portfolio-darkPink px-2 py-1 rounded-full"
+                    >Teaching</span
+                  >
+                </div>
+                <p class="text-gray-600 text-sm mb-4">
+                  Modul pembelajaran pemrograman untuk anak usia 8-15 tahun
+                  dengan pendekatan game dan proyek sederhana yang menyenangkan.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >Scratch</span
+                  >
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >Python Basics</span
+                  >
+                  <span
+                    class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
+                    >Game Design</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- See More Button -->
+        <div class="text-center mt-12">
+          <a
+            href="#"
+            class="inline-flex items-center px-6 py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300 shadow-lg hover:shadow-xl"
+          >
+            <span>Lihat Lebih Banyak Proyek</span>
+            <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section id="layanan" class="py-20 bg-gray-50 relative overflow-hidden">
+      <!-- Background decorative elements -->
+      <div
+        class="absolute top-0 right-0 w-64 h-64 bg-portfolio-lightPink rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000"
+      ></div>
+      <div
+        class="absolute bottom-0 left-20 w-72 h-72 bg-portfolio-pink rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+            Layanan
+          </h2>
+          <div class="h-1 w-20 bg-portfolio-pink mx-auto mb-4"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Berbagai layanan profesional yang saya tawarkan untuk membantu
+            mewujudkan ide dan kebutuhan Anda.
+          </p>
+        </div>
+
+        <!-- Services Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 mb-10">
+          <button
+            class="service-tab active px-5 py-3 rounded-full bg-portfolio-pink text-white transition-all duration-300 focus:outline-none"
+            data-tab="design"
+          >
+            <i class="fas fa-pencil-ruler mr-2"></i>UI/UX Design
+          </button>
+          <button
+            class="service-tab px-5 py-3 rounded-full bg-white text-gray-700 hover:bg-gray-100 transition-all duration-300 focus:outline-none"
+            data-tab="development"
+          >
+            <i class="fas fa-code mr-2"></i>Web Development
+          </button>
+          <button
+            class="service-tab px-5 py-3 rounded-full bg-white text-gray-700 hover:bg-gray-100 transition-all duration-300 focus:outline-none"
+            data-tab="data"
+          >
+            <i class="fas fa-chart-pie mr-2"></i>Data Science
+          </button>
+          <button
+            class="service-tab px-5 py-3 rounded-full bg-white text-gray-700 hover:bg-gray-100 transition-all duration-300 focus:outline-none"
+            data-tab="teaching"
+          >
+            <i class="fas fa-graduation-cap mr-2"></i>Private Teaching
+          </button>
+        </div>
+
+        <!-- Service Content Area -->
+        <div class="mt-8 service-content-wrapper">
+          <!-- UI/UX Design Services -->
+          <div class="service-content active" id="design-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+              <div class="order-2 md:order-1">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                  UI/UX Design Services
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Saya membantu bisnis dan startup untuk menciptakan pengalaman
+                  digital yang menarik dan user-friendly, meningkatkan konversi
+                  dan kepuasan pengguna.
+                </p>
+
+                <div class="space-y-4 mb-8">
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                      <div
+                        class="w-8 h-8 rounded-full bg-portfolio-lightPink flex items-center justify-center"
+                      >
+                        <i
+                          class="fas fa-paint-brush text-portfolio-darkPink"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        UI Design
+                      </h4>
+                      <p class="text-gray-600">
+                        Desain visual yang menarik dan konsisten untuk website,
+                        aplikasi mobile, dan produk digital lainnya.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                      <div
+                        class="w-8 h-8 rounded-full bg-portfolio-lightPink flex items-center justify-center"
+                      >
+                        <i
+                          class="fas fa-user-friends text-portfolio-darkPink"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        UX Research
+                      </h4>
+                      <p class="text-gray-600">
+                        Memahami kebutuhan pengguna melalui wawancara, testing,
+                        dan analisis data untuk mengoptimalkan pengalaman.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                      <div
+                        class="w-8 h-8 rounded-full bg-portfolio-lightPink flex items-center justify-center"
+                      >
+                        <i class="fas fa-sitemap text-portfolio-darkPink"></i>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        Wireframing & Prototyping
+                      </h4>
+                      <p class="text-gray-600">
+                        Membuat wireframe dan prototype interaktif untuk
+                        memvisualisasikan dan menguji alur pengguna.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="#kontak"
+                  class="inline-flex items-center px-5 py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300 shadow-md hover:shadow-lg"
+                >
+                  <span>Diskusikan Kebutuhan Anda</span>
+                  <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+
+              <div class="order-1 md:order-2 relative">
+                <div class="relative rounded-xl overflow-hidden shadow-xl">
+                  <img
+                    src="https://placehold.co/600x400/FFB6C1/fff?text=UI/UX+Services"
+                    alt="UI/UX Design Services"
+                    class="w-full h-auto rounded-xl"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-20"
+                  ></div>
+                </div>
+                <div
+                  class="absolute -bottom-6 -right-6 w-24 h-24 bg-portfolio-lightPink rounded-lg rotate-12 opacity-70"
+                ></div>
+                <div
+                  class="absolute -top-6 -left-6 w-20 h-20 bg-portfolio-pink rounded-lg -rotate-12 opacity-70"
+                ></div>
+              </div>
+            </div>
+
+            
+          <!-- Web Development Services (Hidden by default) --> 
+          <div class="service-content hidden" id="development-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+              <div class="order-2 md:order-1">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                  Web Development Services
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Saya membangun website dan aplikasi web yang responsif, cepat,
+                  dan aman dengan teknologi modern yang sesuai dengan kebutuhan
+                  bisnis Anda.
+                </p>
+
+                <div class="space-y-4 mb-8">
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                      <div
+                        class="w-8 h-8 rounded-full bg-portfolio-lightPink flex items-center justify-center"
+                      >
+                        <i
+                          class="fas fa-laptop-code text-portfolio-darkPink"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        Website Development
+                      </h4>
+                      <p class="text-gray-600">
+                        Pembuatan website profesional, e-commerce, landing page,
+                        dan blog dengan desain responsif.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                      <div
+                        class="w-8 h-8 rounded-full bg-portfolio-lightPink flex items-center justify-center"
+                      >
+                        <i
+                          class="fas fa-mobile-alt text-portfolio-darkPink"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        Web Application
+                      </h4>
+                      <p class="text-gray-600">
+                        Pengembangan aplikasi web dinamis dengan fokus pada
+                        performa, keamanan, dan pengalaman pengguna.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                      <div
+                        class="w-8 h-8 rounded-full bg-portfolio-lightPink flex items-center justify-center"
+                      >
+                        <i class="fas fa-sync-alt text-portfolio-darkPink"></i>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        Website Maintenance
+                      </h4>
+                      <p class="text-gray-600">
+                        Pemeliharaan dan pengembangan lanjutan untuk website
+                        yang sudah ada, termasuk update dan optimasi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="#kontak"
+                  class="inline-flex items-center px-5 py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300 shadow-md hover:shadow-lg"
+                >
+                  <span>Diskusikan Kebutuhan Anda</span>
+                  <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+
+              <div class="order-1 md:order-2 relative">
+                <div class="relative rounded-xl overflow-hidden shadow-xl">
+                  <img
+                    src="https://placehold.co/600x400/FFB6C1/fff?text=Web+Development"
+                    alt="Web Development Services"
+                    class="w-full h-auto rounded-xl"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-20"
+                  ></div>
+                </div>
+                <div
+                  class="absolute -bottom-6 -right-6 w-24 h-24 bg-portfolio-lightPink rounded-lg rotate-12 opacity-70"
+                ></div>
+                <div
+                  class="absolute -top-6 -left-6 w-20 h-20 bg-portfolio-pink rounded-lg -rotate-12 opacity-70"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Service Packages -->
+            <div class="mt-16">
+              <h3 class="text-xl font-bold text-center text-gray-800 mb-8">
+                Paket Layanan
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Package -->
+                <div
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-2"
+                >
+                  <div
+                    class="p-1 bg-gradient-to-r from-portfolio-lightPink to-portfolio-pink"
+                  >
+                    <div class="bg-white p-6">
+                      <div class="text-center mb-4">
+                        <h4 class="text-xl font-bold text-gray-800">
+                          Landing Page
+                        </h4>
+                        <div class="flex justify-center my-4">
+                          <span class="text-3xl font-bold text-portfolio-pink"
+                            >Rp 3jt</span
+                          >
+                        </div>
+                      </div>
+                      <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>One-page website</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Responsive design</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Contact form</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>SEO basic setup</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>1x revisi</span>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a
+                          href="#kontak"
+                          class="inline-block w-full py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300"
+                          >Pilih Paket</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Standard Package -->
+                <div
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl"
+                >
+                  <div
+                    class="p-1 bg-gradient-to-r from-portfolio-pink to-portfolio-darkPink"
+                  >
+                    <div class="bg-white p-6">
+                      <div class="text-center mb-4">
+                        <span
+                          class="inline-block px-3 py-1 bg-portfolio-lightPink text-portfolio-darkPink text-xs rounded-full font-semibold mb-2"
+                          >Popular</span
+                        >
+                        <h4 class="text-xl font-bold text-gray-800">
+                          Business Website
+                        </h4>
+                        <div class="flex justify-center my-4">
+                          <span class="text-3xl font-bold text-portfolio-pink"
+                            >Rp 7jt</span
+                          >
+                        </div>
+                      </div>
+                      <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>5-7 halaman website</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Responsive design</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Content management system</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Contact form</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>SEO optimization</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>2x revisi</span>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a
+                          href="#kontak"
+                          class="inline-block w-full py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300"
+                          >Pilih Paket</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Premium Package -->
+                <div
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-2"
+                >
+                  <div
+                    class="p-1 bg-gradient-to-r from-portfolio-darkPink to-portfolio-lightPink"
+                  >
+                    <div class="bg-white p-6">
+                      <div class="text-center mb-4">
+                        <h4 class="text-xl font-bold text-gray-800">
+                          E-Commerce Website
+                        </h4>
+                        <div class="flex justify-center my-4">
+                          <span class="text-3xl font-bold text-portfolio-pink"
+                            >Rp 15jt</span
+                          >
+                        </div>
+                      </div>
+                      <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Full e-commerce website</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Product management</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Payment gateway integration</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Order management</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>User accounts</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Advanced SEO</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>3x revisi</span>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a
+                          href="#kontak"
+                          class="inline-block w-full py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300"
+                          >Pilih Paket</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Science Services (Hidden by default) -->
+          <div class="service-content hidden" id="data-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+              <div class="order-2 md:order-1">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                  Data Science Services
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Saya membantu bisnis mengolah data menjadi insight yang
+                  actionable dan membuat model prediktif untuk meningkatkan
+                  pengambilan keputusan.
+                </p>
+
+                <div class="space-y-4 mb-8">
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                      <div
+                        class="w-8 h-8 rounded-full bg-portfolio-lightPink flex items-center justify-center"
+                      >
+                        <i
+                          class="fas fa-chart-line text-portfolio-darkPink"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        Data Analysis
+                      </h4>
+                      <p class="text-gray-600">
+                        Menganalisis data Anda untuk menemukan tren, pola, dan
+                        insight yang dapat meningkatkan performa bisnis.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                      <div
+                        class="w-8 h-8 rounded-full bg-portfolio-lightPink flex items-center justify-center"
+                      >
+                        <i class="fas fa-brain text-portfolio-darkPink"></i>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        Machine Learning
+                      </h4>
+                      <p class="text-gray-600">
+                        Membuat model machine learning untuk prediksi,
+                        klasifikasi, atau rekomendasi sesuai kebutuhan bisnis
+                        Anda.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                      <div
+                        class="w-8 h-8 rounded-full bg-portfolio-lightPink flex items-center justify-center"
+                      >
+                        <i class="fas fa-chart-bar text-portfolio-darkPink"></i>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        Data Visualization
+                      </h4>
+                      <p class="text-gray-600">
+                        Membuat dashboard dan visualisasi interaktif untuk
+                        memudahkan pemahaman data kompleks.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="#kontak"
+                  class="inline-flex items-center px-5 py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300 shadow-md hover:shadow-lg"
+                >
+                  <span>Diskusikan Kebutuhan Anda</span>
+                  <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+
+              <div class="order-1 md:order-2 relative">
+                <div class="relative rounded-xl overflow-hidden shadow-xl">
+                  <img
+                    src="https://placehold.co/600x400/FFB6C1/fff?text=Data+Science"
+                    alt="Data Science Services"
+                    class="w-full h-auto rounded-xl"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-20"
+                  ></div>
+                </div>
+                <div
+                  class="absolute -bottom-6 -right-6 w-24 h-24 bg-portfolio-lightPink rounded-lg rotate-12 opacity-70"
+                ></div>
+                <div
+                  class="absolute -top-6 -left-6 w-20 h-20 bg-portfolio-pink rounded-lg -rotate-12 opacity-70"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Service Packages -->
+            <div class="mt-16">
+              <h3 class="text-xl font-bold text-center text-gray-800 mb-8">
+                Paket Layanan
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Package -->
+                <div
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-2"
+                >
+                  <div
+                    class="p-1 bg-gradient-to-r from-portfolio-lightPink to-portfolio-pink"
+                  >
+                    <div class="bg-white p-6">
+                      <div class="text-center mb-4">
+                        <h4 class="text-xl font-bold text-gray-800">
+                          Data Analysis
+                        </h4>
+                        <div class="flex justify-center my-4">
+                          <span class="text-3xl font-bold text-portfolio-pink"
+                            >Rp 4jt</span
+                          >
+                        </div>
+                      </div>
+                      <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Data cleaning & preparation</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Exploratory data analysis</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Basic statistical analysis</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>2 visualisasi data</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Laporan insight</span>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a
+                          href="#kontak"
+                          class="inline-block w-full py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300"
+                          >Pilih Paket</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Standard Package -->
+                <div
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl"
+                >
+                  <div
+                    class="p-1 bg-gradient-to-r from-portfolio-pink to-portfolio-darkPink"
+                  >
+                    <div class="bg-white p-6">
+                      <div class="text-center mb-4">
+                        <span
+                          class="inline-block px-3 py-1 bg-portfolio-lightPink text-portfolio-darkPink text-xs rounded-full font-semibold mb-2"
+                          >Popular</span
+                        >
+                        <h4 class="text-xl font-bold text-gray-800">
+                          Data Dashboard
+                        </h4>
+                        <div class="flex justify-center my-4">
+                          <span class="text-3xl font-bold text-portfolio-pink"
+                            >Rp 8jt</span
+                          >
+                        </div>
+                      </div>
+                      <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Data cleaning & preparation</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Advanced statistical analysis</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Interactive dashboard</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>5 visualisasi data</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Laporan insight mendalam</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>2x revisi</span>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a
+                          href="#kontak"
+                          class="inline-block w-full py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300"
+                          >Pilih Paket</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Premium Package -->
+                <div
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-2"
+                >
+                  <div
+                    class="p-1 bg-gradient-to-r from-portfolio-darkPink to-portfolio-lightPink"
+                  >
+                    <div class="bg-white p-6">
+                      <div class="text-center mb-4">
+                        <h4 class="text-xl font-bold text-gray-800">
+                          Machine Learning
+                        </h4>
+                        <div class="flex justify-center my-4">
+                          <span class="text-3xl font-bold text-portfolio-pink"
+                            >Rp 15jt</span
+                          >
+                        </div>
+                      </div>
+                      <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Data cleaning & preparation</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Advanced statistical analysis</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Custom ML model</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Interactive dashboard</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>API implementation</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Comprehensive documentation</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>3x revisi</span>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a
+                          href="#kontak"
+                          class="inline-block w-full py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300"
+                          >Pilih Paket</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Private Teaching Services (Hidden by default) -->
+          <div class="service-content hidden" id="teaching-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+              <div class="order-2 md:order-1">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                  Private Teaching Services
+                </h3>
+                <p class="text-gray-600 mb-6">
+                  Saya menawarkan kelas privat dengan pendekatan personal untuk
+                  membantu siswa meningkatkan kemampuan dalam berbagai mata
+                  pelajaran dan skill.
+                </p>
+
+                <div class="space-y-4 mb-8">
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                      <div
+                        class="w-8 h-8 rounded-full bg-portfolio-lightPink flex items-center justify-center"
+                      >
+                        <i class="fas fa-language text-portfolio-darkPink"></i>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        English Class
+                      </h4>
+                      <p class="text-gray-600">
+                        Kelas bahasa Inggris dengan fokus pada conversation,
+                        grammar, dan vocabulary untuk semua tingkat.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                      <div
+                        class="w-8 h-8 rounded-full bg-portfolio-lightPink flex items-center justify-center"
+                      >
+                        <i
+                          class="fas fa-square-root-alt text-portfolio-darkPink"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        Mathematics Class
+                      </h4>
+                      <p class="text-gray-600">
+                        Kelas matematika dengan pendekatan pemecahan masalah
+                        untuk tingkat SD, SMP, dan SMA.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="flex-shrink-0 mt-1">
+                      <div
+                        class="w-8 h-8 rounded-full bg-portfolio-lightPink flex items-center justify-center"
+                      >
+                        <i
+                          class="fas fa-laptop-code text-portfolio-darkPink"
+                        ></i>
+                      </div>
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="text-lg font-semibold text-gray-800">
+                        Coding for Kids
+                      </h4>
+                      <p class="text-gray-600">
+                        Pengenalan programming untuk anak usia 8-15 tahun dengan
+                        metode fun learning dan project-based.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="#kontak"
+                  class="inline-flex items-center px-5 py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300 shadow-md hover:shadow-lg"
+                >
+                  <span>Diskusikan Kebutuhan Anda</span>
+                  <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+
+              <div class="order-1 md:order-2 relative">
+                <div class="relative rounded-xl overflow-hidden shadow-xl">
+                  <img
+                    src="https://placehold.co/600x400/FFB6C1/fff?text=Private+Teaching"
+                    alt="Private Teaching Services"
+                    class="w-full h-auto rounded-xl"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-20"
+                  ></div>
+                </div>
+                <div
+                  class="absolute -bottom-6 -right-6 w-24 h-24 bg-portfolio-lightPink rounded-lg rotate-12 opacity-70"
+                ></div>
+                <div
+                  class="absolute -top-6 -left-6 w-20 h-20 bg-portfolio-pink rounded-lg -rotate-12 opacity-70"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Service Packages -->
+            <div class="mt-16">
+              <h3 class="text-xl font-bold text-center text-gray-800 mb-8">
+                Paket Layanan
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- English Package -->
+                <div
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-2"
+                >
+                  <div
+                    class="p-1 bg-gradient-to-r from-portfolio-lightPink to-portfolio-pink"
+                  >
+                    <div class="bg-white p-6">
+                      <div class="text-center mb-4">
+                        <h4 class="text-xl font-bold text-gray-800">
+                          English Class
+                        </h4>
+                        <div class="flex justify-center my-4">
+                          <span class="text-3xl font-bold text-portfolio-pink"
+                            >Rp 150K</span
+                          >
+                          <span class="text-gray-600 self-end ml-1">/sesi</span>
+                        </div>
+                      </div>
+                      <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>90 menit per sesi</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Conversation practice</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Grammar & vocabulary</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Reading & writing</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Custom learning materials</span>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a
+                          href="#kontak"
+                          class="inline-block w-full py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300"
+                          >Daftar Sekarang</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Math Package -->
+                <div
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl"
+                >
+                  <div
+                    class="p-1 bg-gradient-to-r from-portfolio-pink to-portfolio-darkPink"
+                  >
+                    <div class="bg-white p-6">
+                      <div class="text-center mb-4">
+                        <span
+                          class="inline-block px-3 py-1 bg-portfolio-lightPink text-portfolio-darkPink text-xs rounded-full font-semibold mb-2"
+                          >Popular</span
+                        >
+                        <h4 class="text-xl font-bold text-gray-800">
+                          Mathematics Class
+                        </h4>
+                        <div class="flex justify-center my-4">
+                          <span class="text-3xl font-bold text-portfolio-pink"
+                            >Rp 150K</span
+                          >
+                          <span class="text-gray-600 self-end ml-1">/sesi</span>
+                        </div>
+                      </div>
+                      <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>90 menit per sesi</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Konsep matematika</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Problem solving</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Latihan soal</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Custom learning materials</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Homework review</span>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a
+                          href="#kontak"
+                          class="inline-block w-full py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300"
+                          >Daftar Sekarang</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Coding Package -->
+                <div
+                  class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:-translate-y-2"
+                >
+                  <div
+                    class="p-1 bg-gradient-to-r from-portfolio-darkPink to-portfolio-lightPink"
+                  >
+                    <div class="bg-white p-6">
+                      <div class="text-center mb-4">
+                        <h4 class="text-xl font-bold text-gray-800">
+                          Coding for Kids
+                        </h4>
+                        <div class="flex justify-center my-4">
+                          <span class="text-3xl font-bold text-portfolio-pink"
+                            >Rp 175K</span
+                          >
+                          <span class="text-gray-600 self-end ml-1">/sesi</span>
+                        </div>
+                      </div>
+                      <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>90 menit per sesi</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Basic programming concepts</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Scratch or Python</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Game development</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Interactive projects</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                          <i class="fas fa-check text-green-500 mr-2"></i>
+                          <span>Age-appropriate materials</span>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <a
+                          href="#kontak"
+                          class="inline-block w-full py-3 bg-portfolio-pink text-white rounded-full hover:bg-portfolio-darkPink transition duration-300"
+                          >Daftar Sekarang</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="mt-24">
+          <h3 class="text-2xl font-bold text-center text-gray-800 mb-3">
+            Client Testimonials
+          </h3>
+          <div class="h-1 w-20 bg-portfolio-pink mx-auto mb-12"></div>
+
+          <div class="relative">
+            <!-- Testimonial Slider Arrows -->
+            <button
+              class="absolute top-1/2 -left-4 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md text-portfolio-pink hover:text-white hover:bg-portfolio-pink z-10 transition-all duration-300 focus:outline-none hidden md:block"
+              id="testimonial-prev"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <button
+              class="absolute top-1/2 -right-4 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md text-portfolio-pink hover:text-white hover:bg-portfolio-pink z-10 transition-all duration-300 focus:outline-none hidden md:block"
+              id="testimonial-next"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Testimonial Slider -->
+            <div class="testimonial-slider overflow-hidden">
+              <div
+                class="testimonial-slides flex transition-transform duration-500"
+                style="transform: translateX(0)"
+              >
+                <!-- Testimonial 1 -->
+                <div
+                  class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4"
+                >
+                  <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="mb-4">
+                      <div class="text-yellow-400 flex">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                      "Adzikra telah membantu saya membuat UI yang sangat
+                      intuitif untuk aplikasi kami. Pengguna sangat menyukai
+                      desainnya dan engagement meningkat drastis."
+                    </p>
+                    <div class="flex items-center">
+                      <img
+                        src="https://placehold.co/100x100/FFB6C1/fff?text=D"
+                        alt="Client"
+                        class="w-12 h-12 rounded-full object-cover mr-4"
+                      />
+                      <div>
+                        <h4 class="font-semibold text-gray-800">Dimas S.</h4>
+                        <p class="text-xs text-gray-500">
+                          CEO, TechStart Indonesia
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div
+                  class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4"
+                >
+                  <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="mb-4">
+                      <div class="text-yellow-400 flex">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                      "Model analisis yang dibuat Adzikra berhasil meningkatkan
+                      akurasi prediksi penjualan kami. Proses kerjanya sangat
+                      profesional dan hasil akhirnya melebihi ekspektasi."
+                    </p>
+                    <div class="flex items-center">
+                      <img
+                        src="https://placehold.co/100x100/FFB6C1/fff?text=R"
+                        alt="Client"
+                        class="w-12 h-12 rounded-full object-cover mr-4"
+                      />
+                      <div>
+                        <h4 class="font-semibold text-gray-800">Rini W.</h4>
+                        <p class="text-xs text-gray-500">
+                          Marketing Director, OnlineMart
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div
+                  class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4"
+                >
+                  <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="mb-4">
+                      <div class="text-yellow-400 flex">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                      "Website e-commerce yang dibuat Adzikra sangat responsif
+                      dan user-friendly. Proses checkout yang mulus membuat
+                      conversion rate kami meningkat signifikan."
+                    </p>
+                    <div class="flex items-center">
+                      <img
+                        src="https://placehold.co/100x100/FFB6C1/fff?text=F"
+                        alt="Client"
+                        class="w-12 h-12 rounded-full object-cover mr-4"
+                      />
+                      <div>
+                        <h4 class="font-semibold text-gray-800">Farhan A.</h4>
+                        <p class="text-xs text-gray-500">Owner, FashionNow</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div
+                  class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4"
+                >
+                  <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="mb-4">
+                      <div class="text-yellow-400 flex">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">
+                      "Anak saya sangat antusias belajar coding dengan Kak
+                      Adzikra. Metode pengajarannya menyenangkan dan fokus pada
+                      pemahaman konsep daripada sekedar menghafal."
+                    </p>
+                    <div class="flex items-center">
+                      <img
+                        src="https://placehold.co/100x100/FFB6C1/fff?text=M"
+                        alt="Client"
+                        class="w-12 h-12 rounded-full object-cover mr-4"
+                      />
+                      <div>
+                        <h4 class="font-semibold text-gray-800">Maya P.</h4>
+                        <p class="text-xs text-gray-500">Parent</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial Indicators -->
+            <div class="flex justify-center mt-8 space-x-2">
+              <button
+                class="testimonial-indicator w-3 h-3 rounded-full bg-portfolio-pink opacity-100 focus:outline-none"
+                data-index="0"
+              ></button>
+              <button
+                class="testimonial-indicator w-3 h-3 rounded-full bg-portfolio-pink opacity-40 hover:opacity-70 focus:outline-none"
+                data-index="1"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="py-20 bg-gray-50 relative overflow-hidden">
+      <!-- Background decorative elements -->
+      <div
+        class="absolute top-20 right-10 w-72 h-72 bg-portfolio-lightPink rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"
+      ></div>
+      <div
+        class="absolute -bottom-20 left-10 w-80 h-80 bg-portfolio-pink rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+            Kontak
+          </h2>
+          <div class="h-1 w-20 bg-portfolio-pink mx-auto mb-4"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Mari berkolaborasi untuk mewujudkan ide kreatif Anda. Hubungi saya
+            untuk diskusi lebih lanjut.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
+          <!-- Contact Information - Left Side -->
+          <div class="lg:col-span-2 order-2 lg:order-1">
+            <div
+              class="bg-white rounded-xl shadow-lg p-8 transform hover:-translate-y-1 transition-all duration-300"
+            >
+              <h3 class="text-2xl font-bold text-gray-800 mb-6">
+                Informasi Kontak
+              </h3>
+
+              <!-- Contact cards -->
+              <div class="space-y-6">
+                <!-- Email -->
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="w-12 h-12 rounded-full bg-portfolio-lightPink flex items-center justify-center"
+                    >
+                      <i
+                        class="fas fa-envelope text-portfolio-darkPink text-xl"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-semibold text-gray-800">Email</h4>
+                    <a
+                      href="mailto:adzikra@example.com"
+                      class="text-gray-600 hover:text-portfolio-pink transition-colors"
+                      >adzikra@example.com</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="w-12 h-12 rounded-full bg-portfolio-lightPink flex items-center justify-center"
+                    >
+                      <i
+                        class="fas fa-phone text-portfolio-darkPink text-xl"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-semibold text-gray-800">Telepon</h4>
+                    <a
+                      href="tel:+6281234567890"
+                      class="text-gray-600 hover:text-portfolio-pink transition-colors"
+                      >+62 812 3456 7890</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Location -->
+                <div class="flex items-start">
+                  <div class="flex-shrink-0">
+                    <div
+                      class="w-12 h-12 rounded-full bg-portfolio-lightPink flex items-center justify-center"
+                    >
+                      <i
+                        class="fas fa-map-marker-alt text-portfolio-darkPink text-xl"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-lg font-semibold text-gray-800">Lokasi</h4>
+                    <p class="text-gray-600">Jakarta, Indonesia</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social media links -->
+              <div class="mt-10">
+                <h4 class="text-lg font-semibold text-gray-800 mb-4">
+                  Connect With Me
+                </h4>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-portfolio-pink hover:text-white transition-all duration-300"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-portfolio-pink hover:text-white transition-all duration-300"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-portfolio-pink hover:text-white transition-all duration-300"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-portfolio-pink hover:text-white transition-all duration-300"
+                  >
+                    <i class="fab fa-dribbble"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-portfolio-pink hover:text-white transition-all duration-300"
+                  >
+                    <i class="fab fa-behance"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Availability -->
+              <div
+                class="mt-10 p-5 bg-gray-50 rounded-lg border border-gray-100"
+              >
+                <h4
+                  class="text-lg font-semibold text-gray-800 mb-2 flex items-center"
+                >
+                  <i class="fas fa-clock text-portfolio-pink mr-2"></i>
+                  Jam Kerja
+                </h4>
+                <p class="text-gray-600">Senin - Jumat: 09:00 - 17:00</p>
+                <p class="text-gray-600">Sabtu: 09:00 - 13:00</p>
+                <div class="mt-3 flex items-center">
+                  <div
+                    class="w-3 h-3 rounded-full bg-green-500 mr-2 pulse-dot"
+                  ></div>
+                  <p class="text-sm font-medium text-green-600">
+                    Available for freelance projects
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form - Right Side -->
+          <div class="lg:col-span-3 order-1 lg:order-2">
+            <div
+              class="bg-white rounded-xl shadow-lg p-8 transform hover:-translate-y-1 transition-all duration-300"
+            >
+              <h3 class="text-2xl font-bold text-gray-800 mb-6">Kirim Pesan</h3>
+              <form id="contact-form" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <!-- Name -->
+                  <div class="form-group">
+                    <label
+                      for="name"
+                      class="block text-sm font-medium text-gray-700 mb-1"
+                      >Nama</label
+                    >
+                    <div class="relative">
+                      <div
+                        class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                      >
+                        <i class="fas fa-user text-gray-400"></i>
+                      </div>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-portfolio-pink focus:border-portfolio-pink transition-all duration-300 placeholder-gray-400"
+                        placeholder="Nama Lengkap"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="form-group">
+                    <label
+                      for="email"
+                      class="block text-sm font-medium text-gray-700 mb-1"
+                      >Email</label
+                    >
+                    <div class="relative">
+                      <div
+                        class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                      >
+                        <i class="fas fa-envelope text-gray-400"></i>
+                      </div>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-portfolio-pink focus:border-portfolio-pink transition-all duration-300 placeholder-gray-400"
+                        placeholder="email@example.com"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Subject & Service Selection -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <!-- Subject -->
+                  <div class="form-group">
+                    <label
+                      for="subject"
+                      class="block text-sm font-medium text-gray-700 mb-1"
+                      >Subjek</label
+                    >
+                    <div class="relative">
+                      <div
+                        class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                      >
+                        <i class="fas fa-heading text-gray-400"></i>
+                      </div>
+                      <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-portfolio-pink focus:border-portfolio-pink transition-all duration-300 placeholder-gray-400"
+                        placeholder="Subjek pesan Anda"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Service -->
+                  <div class="form-group">
+                    <label
+                      for="service"
+                      class="block text-sm font-medium text-gray-700 mb-1"
+                      >Layanan</label
+                    >
+                    <div class="relative">
+                      <div
+                        class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                      >
+                        <i class="fas fa-briefcase text-gray-400"></i>
+                      </div>
+                      <select
+                        id="service"
+                        name="service"
+                        class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-portfolio-pink focus:border-portfolio-pink transition-all duration-300 bg-white"
+                      >
+                        <option value="" selected disabled>
+                          Pilih layanan
+                        </option>
+                        <option value="ui-ux">UI/UX Design</option>
+                        <option value="web">Web Development</option>
+                        <option value="data">Data Science</option>
+                        <option value="teaching">Private Teaching</option>
+                        <option value="other">Lainnya</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Pesan</label
+                  >
+                  <div class="relative">
+                    <div
+                      class="absolute top-3 left-3 flex items-start pointer-events-none"
+                    >
+                      <i class="fas fa-comment-alt text-gray-400"></i>
+                    </div>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-portfolio-pink focus:border-portfolio-pink transition-all duration-300 placeholder-gray-400"
+                      placeholder="Tulis pesan Anda di sini..."
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+
+                <!-- File Upload -->
+                <div class="form-group">
+                  <label
+                    for="attachment"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Lampiran (opsional)</label
+                  >
+                  <div class="relative">
+                    <div
+                      class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-lg hover:border-portfolio-pink transition-all duration-300"
+                    >
+                      <div class="space-y-1 text-center">
+                        <i
+                          class="fas fa-cloud-upload-alt text-gray-400 text-3xl mb-2"
+                        ></i>
+                        <div class="flex text-sm text-gray-600">
+                          <label
+                            for="attachment"
+                            class="relative cursor-pointer bg-white rounded-md font-medium text-portfolio-pink hover:text-portfolio-darkPink focus-within:outline-none"
+                          >
+                            <span>Upload a file</span>
+                            <input
+                              id="attachment"
+                              name="attachment"
+                              type="file"
+                              class="sr-only"
+                            />
+                          </label>
+                          <p class="pl-1">or drag and drop</p>
+                        </div>
+                        <p class="text-xs text-gray-500">
+                          PNG, JPG, PDF up to 10MB
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                  <button
+                    type="submit"
+                    class="w-full py-3 px-6 text-white font-medium rounded-full bg-portfolio-pink hover:bg-portfolio-darkPink focus:outline-none focus:ring-2 focus:ring-portfolio-pink focus:ring-offset-2 transition-all duration-300 shadow-md hover:shadow-lg"
+                  >
+                    <i class="fas fa-paper-plane mr-2"></i>
+                    Kirim Pesan
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="mt-16 rounded-xl overflow-hidden shadow-lg">
+          <div class="relative w-full h-96">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253840.65295081644!2d106.68942574889112!3d-6.229386704248794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1626419583390!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+
+            <!-- Map overlay with contact info -->
+            <div
+              class="absolute top-6 left-6 bg-white rounded-lg shadow-lg p-6 max-w-sm"
+            >
+              <h4 class="text-lg font-bold text-gray-800 mb-2">
+                Adzikra Tazkiya Qurr
+              </h4>
+              <p class="text-gray-600 mb-4">Jakarta, Indonesia</p>
+              <a
+                href="tel:+6281234567890"
+                class="inline-flex items-center text-portfolio-pink hover:text-portfolio-darkPink transition-colors"
+              >
+                <i class="fas fa-phone mr-2"></i>
+                +62 812 3456 7890
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-2xl font-bold text-gray-800 mb-2">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-gray-600">
+            Beberapa pertanyaan yang sering ditanyakan
+          </p>
+        </div>
+
+        <div class="space-y-4" id="accordion">
+          <!-- FAQ Item 1 -->
+          <div class="bg-gray-50 rounded-lg overflow-hidden">
+            <button
+              class="faq-button flex justify-between items-center w-full p-5 text-left focus:outline-none"
+            >
+              <span class="text-lg font-medium text-gray-800"
+                >Bagaimana proses kerja Anda?</span
+              >
+              <i
+                class="fas fa-chevron-down text-portfolio-pink transition-transform duration-300"
+              ></i>
+            </button>
+            <div class="faq-answer px-5 pb-5 hidden">
+              <p class="text-gray-600">
+                Proses kerja saya dimulai dengan konsultasi awal untuk memahami
+                kebutuhan Anda. Kemudian saya akan membuat proposal yang
+                mencakup timeline, deliverables, dan estimasi biaya. Setelah
+                proposal disetujui, saya akan mulai bekerja dengan update
+                progress berkala, dan proses revisi sesuai kesepakatan. Setelah
+                semua disetujui, proyek akan diselesaikan dan diserahkan kepada
+                Anda.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="bg-gray-50 rounded-lg overflow-hidden">
+            <button
+              class="faq-button flex justify-between items-center w-full p-5 text-left focus:outline-none"
+            >
+              <span class="text-lg font-medium text-gray-800"
+                >Berapa lama waktu yang dibutuhkan untuk menyelesaikan
+                proyek?</span
+              >
+              <i
+                class="fas fa-chevron-down text-portfolio-pink transition-transform duration-300"
+              ></i>
+            </button>
+            <div class="faq-answer px-5 pb-5 hidden">
+              <p class="text-gray-600">
+                Waktu penyelesaian proyek tergantung pada kompleksitas dan
+                scope. Untuk proyek UI/UX Design sederhana, biasanya membutuhkan
+                1-2 minggu. Website biasa 2-4 minggu, sedangkan e-commerce atau
+                proyek data science yang kompleks bisa membutuhkan 1-3 bulan.
+                Timeline detail akan didiskusikan dan disepakati sebelum memulai
+                proyek.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="bg-gray-50 rounded-lg overflow-hidden">
+            <button
+              class="faq-button flex justify-between items-center w-full p-5 text-left focus:outline-none"
+            >
+              <span class="text-lg font-medium text-gray-800"
+                >Apakah Anda menerima revisi setelah proyek selesai?</span
+              >
+              <i
+                class="fas fa-chevron-down text-portfolio-pink transition-transform duration-300"
+              ></i>
+            </button>
+            <div class="faq-answer px-5 pb-5 hidden">
+              <p class="text-gray-600">
+                Ya, saya menyediakan revisi sesuai dengan paket yang dipilih.
+                Basic package biasanya mendapatkan 1x revisi, Standard 2x
+                revisi, dan Premium unlimited revisi dalam jangka waktu
+                tertentu. Untuk revisi tambahan di luar paket, akan dikenakan
+                biaya tambahan yang akan didiskusikan terlebih dahulu.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="bg-gray-50 rounded-lg overflow-hidden">
+            <button
+              class="faq-button flex justify-between items-center w-full p-5 text-left focus:outline-none"
+            >
+              <span class="text-lg font-medium text-gray-800"
+                >Bagaimana cara mendaftar kelas privat?</span
+              >
+              <i
+                class="fas fa-chevron-down text-portfolio-pink transition-transform duration-300"
+              ></i>
+            </button>
+            <div class="faq-answer px-5 pb-5 hidden">
+              <p class="text-gray-600">
+                Untuk mendaftar kelas privat, Anda dapat menghubungi saya
+                melalui form kontak atau langsung ke email/WhatsApp. Kita akan
+                melakukan sesi konsultasi gratis untuk mengetahui kebutuhan
+                belajar, kemudian menyusun jadwal dan materi yang sesuai. Kelas
+                dapat dilakukan secara online via Zoom atau offline jika berada
+                di area Jakarta.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="bg-gray-50 rounded-lg overflow-hidden">
+            <button
+              class="faq-button flex justify-between items-center w-full p-5 text-left focus:outline-none"
+            >
+              <span class="text-lg font-medium text-gray-800"
+                >Apakah Anda menerima pembayaran bertahap?</span
+              >
+              <i
+                class="fas fa-chevron-down text-portfolio-pink transition-transform duration-300"
+              ></i>
+            </button>
+            <div class="faq-answer px-5 pb-5 hidden">
+              <p class="text-gray-600">
+                Ya, untuk proyek dengan nilai tertentu, saya menerima pembayaran
+                bertahap. Biasanya 50% di awal sebagai down payment, dan 50%
+                setelah proyek selesai. Untuk proyek besar dan kompleks, bisa
+                dilakukan dalam 3 tahap: 30% di awal, 30% di pertengahan proyek,
+                dan 40% setelah proyek selesai. Detail pembayaran akan
+                dijelaskan dalam proposal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 pt-16 pb-8 relative overflow-hidden">
+      <!-- Decorative elements -->
+      <div
+        class="absolute top-0 right-0 w-64 h-64 bg-portfolio-pink rounded-full mix-blend-multiply filter blur-xl opacity-5"
+      ></div>
+      <div
+        class="absolute bottom-0 left-0 w-80 h-80 bg-portfolio-darkPink rounded-full mix-blend-multiply filter blur-xl opacity-5"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Footer top section -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16"
+        >
+          <!-- Column 1: About -->
+          <div>
+            <div class="text-2xl font-bold mb-6">
+              <span class="text-portfolio-pink">ADZIKRA</span>
+              <span class="text-white">TAZKIYA</span>
+              <span class="text-portfolio-pink">QURR</span>
+            </div>
+            <p class="text-gray-400 mb-6">
+              Saya membantu klien mewujudkan ide kreatif melalui desain,
+              pengembangan web, analisis data, dan pengajaran yang berkualitas.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-portfolio-pink transition-colors duration-300"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-portfolio-pink transition-colors duration-300"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-portfolio-pink transition-colors duration-300"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-portfolio-pink transition-colors duration-300"
+              >
+                <i class="fab fa-dribbble"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-portfolio-pink transition-colors duration-300"
+              >
+                <i class="fab fa-behance"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-6">Quick Links</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#beranda"
+                  class="text-gray-400 hover:text-portfolio-pink transition-colors duration-300 flex items-center"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-portfolio-pink"
+                  ></i>
+                  Beranda
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#tentang"
+                  class="text-gray-400 hover:text-portfolio-pink transition-colors duration-300 flex items-center"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-portfolio-pink"
+                  ></i>
+                  Tentang
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#portofolio"
+                  class="text-gray-400 hover:text-portfolio-pink transition-colors duration-300 flex items-center"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-portfolio-pink"
+                  ></i>
+                  Portofolio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#layanan"
+                  class="text-gray-400 hover:text-portfolio-pink transition-colors duration-300 flex items-center"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-portfolio-pink"
+                  ></i>
+                  Layanan
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#kontak"
+                  class="text-gray-400 hover:text-portfolio-pink transition-colors duration-300 flex items-center"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-portfolio-pink"
+                  ></i>
+                  Kontak
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Services -->
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-6">Layanan</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#layanan"
+                  class="text-gray-400 hover:text-portfolio-pink transition-colors duration-300 flex items-center"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-portfolio-pink"
+                  ></i>
+                  UI/UX Design
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#layanan"
+                  class="text-gray-400 hover:text-portfolio-pink transition-colors duration-300 flex items-center"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-portfolio-pink"
+                  ></i>
+                  Web Development
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#layanan"
+                  class="text-gray-400 hover:text-portfolio-pink transition-colors duration-300 flex items-center"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-portfolio-pink"
+                  ></i>
+                  Data Science
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#layanan"
+                  class="text-gray-400 hover:text-portfolio-pink transition-colors duration-300 flex items-center"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs mr-2 text-portfolio-pink"
+                  ></i>
+                  Private Teaching
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Newsletter -->
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-6">Newsletter</h3>
+            <p class="text-gray-400 mb-4">
+              Berlangganan newsletter untuk mendapatkan update terbaru tentang
+              proyek dan layanan saya.
+            </p>
+            <form class="mb-4">
+              <div class="relative">
+                <input
+                  type="email"
+                  placeholder="Email Anda"
+                  class="w-full bg-gray-800 text-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-portfolio-pink"
+                />
+                <button
+                  type="submit"
+                  class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-portfolio-pink text-white p-2 rounded-lg hover:bg-portfolio-darkPink transition-colors duration-300"
+                >
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+            <p class="text-gray-500 text-sm">
+              * Saya tidak akan mengirimkan spam.
+            </p>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="h-px bg-gray-800 mb-8"></div>
+
+        <!-- Footer bottom -->
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-500 text-sm mb-4 md:mb-0">
+            &copy; 2023 Adzikra Tazkiya Qurr. All rights reserved.
+          </p>
+          <div class="flex items-center space-x-2">
+            <p class="text-gray-500 text-sm">
+              Last Updated:
+              <span class="text-portfolio-pink">July 15, 2023</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Back to top button -->
+        <a
+          href="#beranda"
+          class="back-to-top fixed bottom-8 right-8 bg-portfolio-pink text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-portfolio-darkPink transition-colors duration-300 z-50 opacity-0"
+        >
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="./Js/index.js"></script>
+  </body>
+</html>
